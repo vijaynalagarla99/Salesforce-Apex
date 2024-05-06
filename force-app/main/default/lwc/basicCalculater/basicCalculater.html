@@ -1,0 +1,39 @@
+<template>
+    <div class="jay">
+        <lightning-input label="Enter FirstNumber:"
+                        placeholder="Firstnumber"
+                        value={firstNumber}
+                        onchange={changing}
+                        name="fname"></lightning-input>
+
+        <lightning-input label="Enter SecondNumber:"
+                            placeholder="Secondnumber"
+                            value={secondNumber}
+                            onchange={changing}
+                            name="sname"></lightning-input>
+
+        <lightning-input label="Operation Result:"
+                            placeholder="Result"
+                            name="opre"
+                            value={OperationResult}></lightning-input> <br>
+        
+        <lightning-button label="Add"
+                            variant="brand"
+                            onclick={addition}></lightning-button> &nbsp;
+        <lightning-button label="Sub"
+                            variant="brand"
+                            onclick={Sub}></lightning-button> &nbsp;
+        
+        <lightning-button label="Mul"
+                            variant="brand"
+                            onclick={Mul}></lightning-button> &nbsp;
+
+        <lightning-button label="Div"
+                            variant="brand"
+                            onclick={divi}></lightning-button> &nbsp;
+
+        <lightning-button label="Modul"
+                            variant="brand"
+                            onclick={Modul}></lightning-button>
+    </div>
+</template>
